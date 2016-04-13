@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>myblog</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap-responsive.css' />
+    <style>
+        body{
+            padding-top: 40px;
+        }
+    </style>
+  </head>
+  <body screen_capture_injected="true">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a href="/" class="brand">Microblog</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="/">首页</a></li>
+                        <li><a href="/login">登录</a></li>
+                        <li><a href="/reg">注册</a></li>
+                        <li><a href="/logout">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connect-flash -->
+    <div id="container" class="container">
+        <% if (success) { %>
+            <div class="alert alert-success">
+                <%= success %>
+            </div>
+            <% } %>
+             <% if (error) { %>
+             <div class="alert alert-error">
+                 <%= error %>
+            </div>
+            <% } %>
+            <hr />
+    </div>
+  </body>
+</html>
