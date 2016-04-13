@@ -1,7 +1,7 @@
 # node
 
 ###前言
-这个是<node开发指南>中的例子，因为express升级之后导致书中的很多api不可用。
+这个是《node.js开发指南》中的例子，因为express升级之后导致书中的很多api不可用。
 
 ###技术
 node+express+mongodb(mongoose)+ejs+bootstraps
